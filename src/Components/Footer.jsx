@@ -58,11 +58,9 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="social-media">
             <p>© {currentYear} All Rights Reserved</p>
-            <p>Powered By BFC-Virtu AI<a href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
+            <p><a href="#" target="_blank" rel="noopener noreferrer"
               >
-                <FaInstagram />
+                Powered By BFC-Virtu AI
               </a>
             </p>
             
