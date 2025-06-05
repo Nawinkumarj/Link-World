@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { assets } from '../assets/assets';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
   return (
     <div className='navbarContainer'>
       <div className='leftSide'>
-        <a href="#home" onClick={() => scrollToSection('home')}>LOGO</a>
+        <a href="#home" onClick={() => scrollToSection('home')}> <img src={assets.logo} alt="" /> </a>
       </div>
 
       <div className={`rightSide ${menuOpen ? 'active' : ''}`}>
