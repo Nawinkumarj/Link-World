@@ -38,36 +38,38 @@ const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <>
-    <SectionTitle text1={'s'} text2={'services'} />
-    <section id='service' className="service-section">
-      <div className="service-left">
-        
-        <div className="buttons">
-          {serviceData.map((service, index) => (
-            <button
-              key={index}
-              onClick={() => handleClick(index)}
-              className={`service-btn ${index === activeIndex ? "active" : ""}`}
-            >
-              {service.title}
-            </button>
-          ))}
-        </div>
+      <div id="service" className="scroll-top">
+        <SectionTitle text1={"s"} text2={"services"} />
       </div>
-      <div className="service-right">
-        <div className="image-circle">
-          <img src={serviceData[activeIndex].image} alt="service" />
+      <section className="service-section">
+        <div className="service-left">
+          <div className="buttons">
+            {serviceData.map((service, index) => (
+              <button
+                key={index}
+                onClick={() => handleClick(index)}
+                className={`service-btn ${
+                  index === activeIndex ? "active" : ""
+                }`}
+              >
+                {service.title}
+              </button>
+            ))}
+          </div>
         </div>
-        <div className="service-content-box fade-in ">
-          <p>{serviceData[activeIndex].description}</p>
-          {/* <a href="#" className="read-more">
+        <div className="service-right">
+          <div className="image-circle">
+            <img src={serviceData[activeIndex].image} alt="service" />
+          </div>
+          <div className="service-content-box fade-in ">
+            <p>{serviceData[activeIndex].description}</p>
+            {/* <a href="#" className="read-more">
             Read More →
           </a> */}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
-    
   );
 };
 

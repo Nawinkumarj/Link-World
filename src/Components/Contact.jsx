@@ -26,7 +26,7 @@ const Contact = () => {
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = 'Invalid email format';
     }
-    if (!formData.phone.trim()) newErrors.phone = 'Phone is required';
+    if (!formData.phone.trim()) newErrors.phone = 'Phone Number is required';
     if (!formData.services.trim()) newErrors.services = 'Please select a service';
     if (!formData.message.trim()) newErrors.message = 'Message is required';
     return newErrors;

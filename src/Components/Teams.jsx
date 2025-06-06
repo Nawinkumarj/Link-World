@@ -5,10 +5,12 @@ import SectionTitle from './SectionTitle'
 const Teams = () => {
   return (
     <>
-    <SectionTitle text1={'T'} text2={'Teams'} />
-      <div id='teams' className="teamsContainer">
+      <div id="teams" className="scroll-top">
+        <SectionTitle text1={"T"} text2={"Teams"} />
+      </div>
+      <div className="teamsContainer">
         <h1 className="name">
-          <span>Dr</span> SANJAY THAKRAR
+          <span>Dr.</span> SANJAY THAKRAR
         </h1>
 
         <h1 className="position">CEO & CHAIRMAN</h1>
@@ -62,7 +64,7 @@ const Teams = () => {
         </div>
       </div>
 
-      <div className='teamContentSm'>
+      <div className="teamContentSm">
         <p>
           Dr. Sanjay Thakrar is the Founder of Euro Exim Bank ,a challenger bank
           in Trade Finance, Headquartered in St. Lucia, with a Representative
