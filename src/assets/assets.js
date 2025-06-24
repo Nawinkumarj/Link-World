@@ -9,8 +9,8 @@ import SR3 from "./CorporateGoverance.webp";
 import SR4 from "./operationalSupportAdvisory.webp";
 import SR5 from "./MergerAcquisitions.webp";
 import Mainbanner1 from "./Mainbanner1.webp";
-import Mainbanner2 from "./Mainbanner2.webp";
-import Mainbanner3 from "./Mainbanner3.webp";
+import Mainbanner2 from "./MainBanner2.webp";
+import Mainbanner3 from "./MainBanner3.webp";
 import contImg from "./contactus.webp";
 import ctaImg from "./cta.webp";
 
