@@ -1,33 +1,38 @@
 import React, { useState } from "react";
-import SectionTitle from './SectionTitle'
+import SectionTitle from './SectionTitle';
+import { assets } from "../assets/assets";
+
+
+
 const Services = () => {
 
 const serviceData = [
   {
     title: "Investment & Capital Management",
-    image: "https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595847.jpg?uid=R149874759&ga=GA1.1.1614317828.1733923836&semt=ais_items_boosted&w=740",
+    image: assets.SR1,
     description: "Funding and financial oversight for subsidiaries.",
   },
   {
     title: "Strategic Business Development",
-    image: "/images/service2.jpg",
+    image: assets.SR2,
     description: "Growth planning and market expansion support. ",
   },
   {
     title: "Corporate Governance & Compliance",
-    image: "https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595847.jpg?uid=R149874759&ga=GA1.1.1614317828.1733923836&semt=ais_items_boosted&w=740",
+    image: assets.SR3,
     description: "Ensuring adherence to local and international regulations. ",
   },
   {
     title: "Operational Support & Advisory ",
-    image: "/images/service4.jpg",
-    description: "Providing guidance on best practices, risk management, and efficiency improvements.",
-    },
-   {
-        title: "Mergers & Acquisitions (M&A) ",
-        image: "/images/service4.jpg",
-        description: " Identifying opportunities for expansion and partnerships. ",
-    },
+    image: assets.SR4,
+    description:
+      "Providing guidance on best practices, risk management, and efficiency improvements.",
+  },
+  {
+    title: "Mergers & Acquisitions (M&A) ",
+    image: assets.SR5,
+    description: " Identifying opportunities for expansion and partnerships. ",
+  },
 ];
 
 const [activeIndex, setActiveIndex] = useState(0);

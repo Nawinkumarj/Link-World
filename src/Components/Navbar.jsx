@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { assets } from "../assets/assets";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,34 +16,42 @@ const Navbar = () => {
   return (
     <div className="navbarContainer">
       <div className="leftSide">
-        <a href="#home" onClick={() => scrollToSection("home")}>
+        <NavLink to="/" href="#home" onClick={() => scrollToSection("home")}>
           {" "}
           <img src={assets.logo} alt="" />{" "}
-        </a>
+        </NavLink>
       </div>
 
       <div className={`rightSide ${menuOpen ? "active" : ""}`}>
-        <a href="#home" onClick={() => scrollToSection("home")}>
+        <NavLink to="/" href="#home" onClick={() => scrollToSection("home")}>
           HOME
-        </a>
-        <a href="#about" onClick={() => scrollToSection("about")}>
+        </NavLink>
+        <NavLink to="/" href="#about" onClick={() => scrollToSection("about")}>
           ABOUT
-        </a>
-        <a href="#service" onClick={() => scrollToSection("service")}>
+        </NavLink>
+        <NavLink
+          to="/"
+          href="#service"
+          onClick={() => scrollToSection("service")}
+        >
           SERVICE
-        </a>
-        <a href="#teams" onClick={() => scrollToSection("teams")}>
+        </NavLink>
+        <NavLink to="/" href="#teams" onClick={() => scrollToSection("teams")}>
           TEAMS
-        </a>
-        <a href="#contact" onClick={() => scrollToSection("contact")}>
+        </NavLink>
+        <NavLink
+          to="/"
+          href="#contact"
+          onClick={() => scrollToSection("contact")}
+        >
           CONTACT
-        </a>
+        </NavLink>
       </div>
 
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         <img src={assets.hum} alt="" />
         <div className="humContainer">
-          <div id="nav-icon2" className={menuOpen ? 'open' : ''}>
+          <div id="nav-icon2" className={menuOpen ? "open" : ""}>
             <span></span>
             <span></span>
             <span></span>

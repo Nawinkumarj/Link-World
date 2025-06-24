@@ -1,21 +1,25 @@
 import React from 'react'
+import { assets } from "../assets/assets";
 
 const CTA = () => {
   return (
-    <div className='ctaContainer'>
-        <div className='leftSide'>
-            <h1>CALL TO ACTION</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed suscipit doloremque minima neque repellat nam qui vitae corporis, aspernatur vel maxime nulla beatae. Distinctio, tempora alias? Expedita vitae provident tempore.</p>
-            <button>
-                Submit
-            </button>
-        </div>
+    <div className="ctaContainer">
+      <div className="leftSide">
+        <h1>Build the Future with Us</h1>
+        <p>
+          Join hands with a partner that drives long-term business growth
+          through intelligent investment and leadership.
+        </p>
+        <a href="#contact" onClick={() => scrollToSection("contact")}>
+          <button>Get in Touch Today </button>
+        </a>
+      </div>
 
-        <div className='rightSide'>
-            <img src="https://cdn.pixabay.com/photo/2025/05/11/22/31/man-9594075_1280.jpg" alt="" />
-        </div>
+      <div className="rightSide">
+        <img src={assets.ctaImg} alt="" />
+      </div>
     </div>
-  )
+  );
 }
 
 export default CTA

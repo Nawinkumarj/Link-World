@@ -50,9 +50,9 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' className="contact-section">
+    <div id="contact" className="contact-section">
       <div className="heading-breadcrumb">
-        <SectionTitle text1={'C'} text2={'Contact'} />
+        <SectionTitle text1={"C"} text2={"Contact"} />
       </div>
 
       <div className="contact-container">
@@ -61,15 +61,28 @@ const Contact = () => {
           <div className="stripe stripe-two"></div>
         </div>
         <div className="contact-left">
-          <h2>Lets Get in <span className="blue">Touch!</span></h2>
-          <p>Lorem ipsum dolor sit amet. Aut quidem voluptas <br /> cum laborum vitae...</p>
-          <p>Lorem ipsum dolor sit amet. Aut quidem voluptas <br /> cum laborum vitae...</p>
-          <p><strong>Qui laudantium</strong></p>
-          <img src={assets.ContactImg} alt="Person" className="contact-image" />
+          <h2>
+            Lets Get in <span className="blue">Touch!</span>
+          </h2>
+          <p>
+            Link World FZCO provides comprehensive financial, strategic <br />
+            and operational support to its subsidiaries, <br /> enabling sustainable
+            growth
+            maximizing business performance <br /> and ensuring long-term
+            success across global markets.
+          </p>
+          {/* <p>
+            <strong>Qui laudantium</strong>
+          </p> */}
+          <img src={assets.contImg} alt="Person" className="contact-image" />
         </div>
 
-        <div className='contact-right'>
-          <form className="contact-form" onSubmit={handleSubmit} autocomplete="off">
+        <div className="contact-right">
+          <form
+            className="contact-form"
+            onSubmit={handleSubmit}
+            autoComplete="off"
+          >
             <label>Full Name:</label>
             <input
               type="text"
@@ -105,11 +118,21 @@ const Contact = () => {
               onChange={handleChange}
             >
               <option value="">-- Select a Service --</option>
-              <option value="Investment & Capital Management">Investment & Capital Management</option>
-              <option value="Strategic Business Development">Strategic Business Development</option>
-              <option value="Corporate Governance & Compliance">Corporate Governance & Compliance</option>
-              <option value="Operational Support & Advisory">Operational Support & Advisory</option>
-              <option value="Mergers & Acquisitions (M&A) ">Mergers & Acquisitions (M&A) </option>
+              <option value="Investment & Capital Management">
+                Investment & Capital Management
+              </option>
+              <option value="Strategic Business Development">
+                Strategic Business Development
+              </option>
+              <option value="Corporate Governance & Compliance">
+                Corporate Governance & Compliance
+              </option>
+              <option value="Operational Support & Advisory">
+                Operational Support & Advisory
+              </option>
+              <option value="Mergers & Acquisitions (M&A) ">
+                Mergers & Acquisitions (M&A){" "}
+              </option>
             </select>
             {errors.services && <small>{errors.services}</small>}
 
@@ -122,7 +145,7 @@ const Contact = () => {
             ></textarea>
             {errors.message && <small>{errors.message}</small>}
 
-            <div className='cont-btn'>
+            <div className="cont-btn">
               <button type="submit">Submit</button>
             </div>
           </form>

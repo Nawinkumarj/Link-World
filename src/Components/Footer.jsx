@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, } from "react-icons/fa";
 import { LiaLinkedin } from 'react-icons/lia';
+import { Link } from "react-router-dom";
 const Footer = () => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -21,7 +22,9 @@ const Footer = () => {
               <a href="#">Dubai</a>
             </p>
             <p>
-              <a href="mailto:LinkWorld@gmail.com">LinkWorld@gmail.com</a>
+              <a href="mailto:info@linkworld-fzco.com">
+                info@linkworld-fzco.com
+              </a>
             </p>
             <p>
               <a href="tel:+919897947495">+91 9897947495</a>
@@ -35,38 +38,38 @@ const Footer = () => {
           <div className="left-center">
             <h5>Quick Links</h5>
             <p>
-              <a href="#home" onClick={() => scrollToSection("home")}>
+              <Link to="/" href="#home" onClick={() => scrollToSection("home")}>
                 Home
-              </a>
+              </Link>
             </p>
             <p>
-              <a href="#about" onClick={() => scrollToSection("about")}>
+              <Link to="/" href="#about" onClick={() => scrollToSection("about")}>
                 About
-              </a>
+              </Link>
             </p>
             <p>
-              <a href="#service" onClick={() => scrollToSection("service")}>
+              <Link to="/" href="#service" onClick={() => scrollToSection("service")}>
                 Services
-              </a>
+              </Link>
             </p>
             <p>
-              <a href="#teams" onClick={() => scrollToSection("teams")}>
+              <Link to="/" href="#teams" onClick={() => scrollToSection("teams")}>
                 Teams
-              </a>
+              </Link>
             </p>
             <p>
-              <a href="#contact" onClick={() => scrollToSection("contact")}>
+              <Link to="/" href="#contact" onClick={() => scrollToSection("contact")}>
                 Contact
-              </a>
+              </Link>
             </p>
           </div>
           <div className="left-center">
             <h5>Legal Notices</h5>
             <p>
-              <a href="#">Privacy Policy </a>
+              <Link to="/privacy">Privacy Policy</Link>
             </p>
             <p>
-              <a href="#">Terms and Conditions</a>
+              <Link to="/TermsCondition">Terms and Conditions</Link>
             </p>
           </div>
         </div>
@@ -74,7 +77,11 @@ const Footer = () => {
           <div className="social-media">
             <p>© {currentYear} All Rights Reserved</p>
             <p>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://virtuai.billionairefrequencycode.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Powered By BFC-Virtu AI
               </a>
             </p>
@@ -84,27 +91,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="media-icon">
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaFacebook />
-          </a>
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagram />
-          </a>
-          <a
-            href="https://www.linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <LiaLinkedin />
-          </a>
+          <FaFacebook />
+          <FaInstagram />
+          <LiaLinkedin />
         </div>
       </div>
     </div>

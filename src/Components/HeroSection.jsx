@@ -1,24 +1,25 @@
 import React, { useState, useEffect } from 'react';
+import { assets } from "../assets/assets";
 
 const slides = [
   {
     id: 1,
-    title: "Slide 1 Title",
-    desc: "This is the description for Slide 1.",
-    img: "https://cdn.pixabay.com/photo/2017/05/02/03/41/action-2277292_1280.jpg"
+    title: "Strategic Growth Starts Here",
+    desc: "“Empowering businesses with strategy, strength, and sustainable growth.” ",
+    img: assets.Mainbanner1,
   },
   {
     id: 2,
-    title: "Slide 2 Title",
-    desc: "This is the description for Slide 2.",
-    img: "https://cdn.pixabay.com/photo/2021/06/16/16/14/swans-6341698_1280.jpg"
+    title: "A Partner in Every Step",
+    desc: "“Behind every successful venture is the right partner — that’s where we come in.” ",
+    img: assets.Mainbanner2,
   },
   {
     id: 3,
-    title: "Slide 3 Title",
-    desc: "This is the description for Slide 3.",
-    img: "https://cdn.pixabay.com/photo/2025/04/14/16/31/animals-9533774_1280.jpg"
-  }
+    title: "Vision. Execution. Legacy",
+    desc: "“Driven by vision. Backed by expertise. Built for long-term success.” ",
+    img: assets.Mainbanner3,
+  },
 ];
 
 const HeroSection = () => {
